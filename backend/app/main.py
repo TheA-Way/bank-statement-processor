@@ -25,7 +25,7 @@ app.add_middleware(
         "https://bank-statement-processor-inky.vercel.app/",        
     ],
     allow_origin_regex=r"https://bank-statement-processor.*\.vercel\.app",
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],    
     allow_headers=["*"],    
 )
