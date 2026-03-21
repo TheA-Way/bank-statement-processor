@@ -22,5 +22,5 @@ export interface MerchantGroup {
   count: number;          
 }
 
-export type SortField = "merchant" | "amount";
+export type SortField = "merchant" | "amount" | "date";
 export type SortDirection = "asc" | "desc";
