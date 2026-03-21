@@ -24,3 +24,6 @@ Thumbs.db
 
 # IDE
 .vscode/settings.json
+
+# Test Folder
+tests/
