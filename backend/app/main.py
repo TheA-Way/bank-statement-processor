@@ -22,10 +22,10 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://bank-statement-processor-inky.vercel.app/",        
+        "https://bank-statement-processor-inky.vercel.app",        
     ],
-    allow_origin_regex=r"https://bank-statement-processor.*\.vercel\.app",
-    allow_credentials=False,
+    allow_origin_regex=r"https://bank-statement-processor-.*-thea-ways-projects\.vercel\.app",
+    allow_credentials=True,
     allow_methods=["*"],    
     allow_headers=["*"],    
 )
@@ -33,7 +33,7 @@ app.add_middleware(
 @app.get("/")
 def root():
     """Health check — confirm the server is running"""
-    return {"status": "Bank Statement Processor API is running 🏦"}
+    return {"status": "Bank Statement Processor API is running"}
 
 
 @app.post("/process-statement", response_model=ProcessedStatement)
