@@ -1,6 +1,6 @@
 <div align="center">
 
-```
+<pre>
 ██████╗  █████╗ ███╗   ██╗██╗  ██╗
 ██╔══██╗██╔══██╗████╗  ██║██║ ██╔╝
 ██████╔╝███████║██╔██╗ ██║█████╔╝ 
@@ -9,7 +9,7 @@
 ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
                                     
     S T A T E M E N T  A N A L Y Z E R
-```
+</pre>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=6366F1&center=true&vCenter=true&width=500&lines=Upload+a+PDF.;See+where+your+money+goes.;Sort.+Group.+Visualize." alt="Typing SVG" />
 
@@ -24,9 +24,14 @@
 <div align="center">
 
 
-# 🏦 Statement Analyzer
+# Bank Statement Analyzer
 
 **Turn messy PDF bank statements into clean, interactive spending dashboards.**
+
+[!CAUTION]
+This is a project, please don't upload sensitive details like real bank statements with account information. Test PDFs have been provided.
+
+**Try it Now: [https://bank-statement-processor-inky.vercel.app/](https://bank-statement-processor-inky.vercel.app/)**
 
 
 ## ✨ Features
@@ -53,3 +58,5 @@
 | Deployment | Vercel (frontend) + Render (backend) | Cloud hosting |
 | Version Control | GitHub | Source control + CI/CD trigger |
 
+## In Progress
+Persistent storage of past statements
