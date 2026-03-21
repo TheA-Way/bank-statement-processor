@@ -21,8 +21,9 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",              
-        "https://bank-statement-processor-nf2qtv33v-thea-ways-projects.vercel.app",        
+        "http://localhost:3000",
+        "https://bank-statement-processor.vercel.app",
+        "https://bank-statement-processor-mi6428atx-thea-ways-projects.vercel.app",        
     ],
     allow_credentials=True,
     allow_methods=["*"],    
