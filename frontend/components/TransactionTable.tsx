@@ -102,8 +102,8 @@ export default function TransactionTable({ transactions }: TransactionTableProps
       return <ChevronDown className="inline w-4 h-4 opacity-30" />;
     }
     return sortDirection === "asc"
-      ? <ChevronUp className="inline w-4 h-4 text-blue-500" />
-      : <ChevronDown className="inline w-4 h-4 text-blue-500" />;
+      ? <ChevronUp className="inline w-4 h-4 text-sky-400" />
+      : <ChevronDown className="inline w-4 h-4 text-sky-400" />;
   };
 
   return (
@@ -119,7 +119,7 @@ export default function TransactionTable({ transactions }: TransactionTableProps
           onClick={() => setIsGrouped(g => !g)}
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
             isGrouped
-              ? "bg-blue-600 text-white"
+              ? "bg-sky-500 text-white"
               : "bg-gray-100 text-gray-700 hover:bg-gray-200"
           }`}
         >
@@ -168,24 +168,24 @@ export default function TransactionTable({ transactions }: TransactionTableProps
                   {/* Group header row */}
                   <tr
                     key={`group-${group.merchant}`}
-                    className="bg-white hover:bg-blue-50 cursor-pointer font-medium"
+                    className="bg-white hover:bg-sky-50 cursor-pointer font-medium"
                     onClick={() => toggleGroup(group.merchant)}
                   >
                     <td className="px-4 py-3">
                       <ChevronRight
-                        className={`w-4 h-4 text-gray-400 transition-transform ${
+                        className={`w-4 h-4 text-gray-700 transition-transform ${
                           expandedGroups.has(group.merchant) ? "rotate-90" : ""
                         }`}
                       />
                     </td>
-                    <td className="px-4 py-3">{group.merchant}</td>
-                    <td className="px-4 py-3 text-gray-400 text-xs">
+                    <td className="px-4 py-3 text-gray-800">{group.merchant}</td>
+                    <td className="px-4 py-3 text-gray-700 text-xs">
                       {group.count} purchase{group.count > 1 ? "s" : ""}
                     </td>
-                    <td className="px-4 py-3 text-right font-semibold">
+                    <td className="px-4 py-3 text-right font-semibold text-gray-700">
                       ${group.total.toFixed(2)}
                     </td>
-                    <td className="px-4 py-3 text-right text-gray-500">
+                    <td className="px-4 py-3 text-right text-gray-700">
                       {group.count}
                     </td>
                   </tr>
@@ -195,7 +195,7 @@ export default function TransactionTable({ transactions }: TransactionTableProps
                     group.transactions.map((t, i) => (
                       <tr
                         key={`${group.merchant}-${i}`}
-                        className="bg-gray-50 text-gray-600"
+                        className="bg-gray-50 text-gray-700"
                       >
                         <td className="px-4 py-2" />
                         <td className="px-4 py-2 pl-10 text-xs">
@@ -213,11 +213,10 @@ export default function TransactionTable({ transactions }: TransactionTableProps
             ) : (
               (processedData as Transaction[]).map((t, i) => (
                 <tr key={i} className="hover:bg-gray-50 transition-colors">
-                  <td className="px-4 py-3">{t.merchant}</td>
-                  <td className="px-4 py-3 text-gray-500">{t.date}</td>
-                  <td className="px-4 py-3 text-right font-medium">
-                    ${t.amount.toFixed(2)}
-                  </td>
+                  <td className="px-4 py-3 text-gray-700">{t.merchant}</td>
+                  <td className="px-4 py-3 text-gray-700">{t.date}</td>
+                  <td className="px-4 py-3 text-right font-medium text-gray-700">
+                    ${t.amount.toFixed(2)}</td>
                 </tr>
               ))
             )}

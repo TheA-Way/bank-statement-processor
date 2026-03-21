@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import { TrendingDown, FileSpreadsheet, BarChart2 } from "lucide-react";
+import { TrendingDown, FileSpreadsheet, BarChart2, Wallet, PiggyBank, Receipt, DollarSign, LayoutDashboard} from "lucide-react";
 import FileUpload from "@/components/FileUpload";
 import TransactionTable from "@/components/TransactionTable";
 import SpendingChart from "@/components/SpendingChart";
@@ -17,14 +17,12 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-sky-50">
       
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center gap-3">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-            <TrendingDown className="w-5 h-5 text-white" />
-          </div>
+          <img src="favicon.png" className="w-8 h-8 rounded-lg" />
           <h1 className="text-xl font-bold text-gray-900">Statement Analyzer</h1>
         </div>
       </header>
@@ -73,7 +71,7 @@ export default function Home() {
                 onClick={() => setActiveTab("table")}
                 className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm transition-all ${
                   activeTab === "table"
-                    ? "bg-blue-600 text-white shadow-sm"
+                    ? "bg-sky-500 text-white shadow-sm"
                     : "bg-white text-gray-600 hover:bg-gray-50 border border-gray-200"
                 }`}
               >
@@ -84,7 +82,7 @@ export default function Home() {
                 onClick={() => setActiveTab("chart")}
                 className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm transition-all ${
                   activeTab === "chart"
-                    ? "bg-blue-600 text-white shadow-sm"
+                    ? "bg-sky-500 text-white shadow-sm"
                     : "bg-white text-gray-600 hover:bg-gray-50 border border-gray-200"
                 }`}
               >

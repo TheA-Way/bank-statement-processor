@@ -64,4 +64,7 @@
 ## In Progress
 Persistent storage of past statements
 
+## Credits
+<a target="_blank" href="https://icons8.com/icon/XyXZ0ym1tSKu/cinnamoroll">Cinnamoroll</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
 </div>
