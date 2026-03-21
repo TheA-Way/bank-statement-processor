@@ -22,8 +22,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://bank-statement-processor-inky.vercel.app/",
-        "https://bank-statement-processor-mi6428atx-thea-ways-projects.vercel.app",        
+        "https://bank-statement-processor-inky.vercel.app/",        
     ],
     allow_credentials=True,
     allow_methods=["*"],    
