@@ -27,9 +27,12 @@
 # Bank Statement Analyzer
 
 **Turn messy PDF bank statements into clean, interactive spending dashboards.**
+</div>
 
 > [!CAUTION]
 > This is a project, please don't upload sensitive details like real bank statements with account information. Test PDFs have been provided.
+
+<div align="center">
 
 **Try it Now: [https://bank-statement-processor-inky.vercel.app/](https://bank-statement-processor-inky.vercel.app/)**
 
@@ -60,3 +63,5 @@
 
 ## In Progress
 Persistent storage of past statements
+
+</div>
